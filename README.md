@@ -1,3 +1,3 @@
 Pagina de inspiração: https://steelhunters.com/pt-BR
 
-galax-survivor.vercel.app
+ https://galax-survivor.vercel.app
