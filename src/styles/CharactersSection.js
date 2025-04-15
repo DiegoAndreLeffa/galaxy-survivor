@@ -61,5 +61,59 @@ export const CharactersContainer = styled.section`
     max-width: 500px;
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(0 0 8px #00ffe0);
+  }
+
+  /* ========== TABLETS ========== */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    .LeftContent {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .Description {
+      max-width: 100%;
+    }
+
+    .CharacterImage {
+      max-width: 400px;
+    }
+  }
+
+  /* ========== CELULARES ========== */
+  @media (max-width: 480px) {
+    padding: 3rem 1.5rem;
+    flex-direction: column;
+
+    .LeftContent {
+      width: 100%;
+      text-align: center;
+    }
+
+    .Tagline {
+      font-size: 0.75rem;
+    }
+
+    .Title {
+      font-size: 2.2rem;
+    }
+
+    .Description {
+      font-size: 0.95rem;
+    }
+
+    .Button {
+      font-size: 0.85rem;
+      padding: 0.6rem 1.5rem;
+    }
+
+    .CharacterImage {
+      max-width: 100%;
+      margin-top: 2rem;
+    }
   }
 `;

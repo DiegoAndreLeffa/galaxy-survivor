@@ -42,7 +42,7 @@ export const NewsContainer = styled.section`
     gap: 2rem;
     flex: 3;
     flex-wrap: wrap;
-	cursor: pointer;
+    cursor: pointer;
   }
 
   .NewsCard {
@@ -52,6 +52,7 @@ export const NewsContainer = styled.section`
     overflow: hidden;
     border-radius: 20px 0 20px 0;
     transition: transform 0.3s ease;
+    flex: 1 1 280px;
   }
 
   .NewsImage {
@@ -91,5 +92,66 @@ export const NewsContainer = styled.section`
     color: #aaa;
     font-family: "Rajdhani", sans-serif;
     margin-top: 0.5rem;
+  }
+
+  /* ========== TABLETS (<= 1024px) ========== */
+  @media (max-width: 1024px) {
+    gap: 5rem;
+    .SideTitle h2 {
+      font-size: 3rem;
+    }
+
+    .NewsList {
+      justify-content: center;
+    }
+
+    .NewsCard {
+      max-width: 100%;
+      flex: 1 1 45%;
+    }
+  }
+
+  /* ========== CELULARES (<= 480px) ========== */
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1.5rem;
+
+    .SideTitle {
+      max-width: 100%;
+      text-align: center;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .ViewAllLink {
+      text-align: center;
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .NewsList {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .NewsCard {
+      max-width: 100%;
+    }
+
+    .NewsText {
+      font-size: 0.95rem;
+    }
+
+    .NewsLabel {
+      font-size: 0.7rem;
+    }
+
+    .NewsDate {
+      font-size: 0.8rem;
+    }
   }
 `;

@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
   display: flex;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   background: #0e0f11;
   padding: 4rem 5%;
   gap: 3rem;
   flex-wrap: wrap;
-  height: 500px;
+  flex-direction: row;
 
   .VideoBox {
     position: relative;
@@ -35,7 +35,7 @@ export const AboutContainer = styled.section`
     padding: 1rem 1.2rem;
     cursor: pointer;
     transition: 0.3s ease;
-	width: 90px;
+    width: 90px;
     z-index: 2;
 
     &:hover {
@@ -91,6 +91,56 @@ export const AboutContainer = styled.section`
     &:hover {
       background-color: #00ffe0;
       color: black;
+    }
+  }
+
+  /* ========== TABLETS (≤ 1024px) ========== */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+
+    .ContentBox {
+      align-items: center;
+      text-align: center;
+    }
+
+    .Title {
+      font-size: 2.5rem;
+    }
+
+    .Description {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* ========== CELULARES (≤ 480px) ========== */
+  @media (max-width: 480px) {
+    padding: 3rem 1.5rem;
+
+    .VideoBox {
+      width: 100%;
+    }
+
+    .PlayButton {
+      font-size: 1.5rem;
+      width: 70px;
+    }
+
+    .Title {
+      font-size: 2rem;
+    }
+
+    .Subtitle {
+      font-size: 0.75rem;
+    }
+
+    .Description {
+      font-size: 0.9rem;
+    }
+
+    .LearnMoreButton {
+      font-size: 0.8rem;
+      padding: 0.6rem 1.5rem;
     }
   }
 `;

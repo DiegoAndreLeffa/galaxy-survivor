@@ -19,7 +19,7 @@ export const FooterContainer = styled.footer`
   .Cont {
     display: flex;
     align-items: center;
-	
+
     .Logo {
       img {
         width: 220px;
@@ -111,6 +111,94 @@ export const FooterContainer = styled.footer`
       font-size: 0.8rem;
       color: #ccc;
       line-height: 1.3;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .TopBar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+    }
+
+    .Cont {
+      flex-direction: column;
+      gap: 1rem;
+
+      .Logo {
+        img {
+          width: 180px;
+        }
+      }
+
+      .LanguageSelect {
+        select {
+          font-size: 0.85rem;
+          padding: 0.4rem 0.5rem;
+        }
+      }
+    }
+
+    .LegalLinks {
+      justify-content: center;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .CTAButton {
+      font-size: 0.85rem;
+      padding: 0.5rem 1.2rem;
+    }
+
+    .SocialIcons {
+      justify-content: center;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .BottomBar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+
+      .Rating {
+        flex-direction: column;
+        align-items: center;
+
+        .age {
+          font-size: 1.2rem;
+          padding: 0.3rem 0.6rem;
+        }
+
+        .info {
+          font-size: 0.75rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .Cont .Logo img {
+      width: 160px;
+    }
+
+    .CTAButton {
+      font-size: 0.8rem;
+      padding: 0.4rem 1rem;
+    }
+
+    .LegalLinks {
+      font-size: 0.75rem;
+    }
+
+    .BottomBar {
+      font-size: 0.75rem;
     }
   }
 `;
